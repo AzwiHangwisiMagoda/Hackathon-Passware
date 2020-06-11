@@ -24,6 +24,24 @@ namespace Passware.PasswordReset
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl outerDiv;
 
         /// <summary>
+        /// email control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email;
+
+        /// <summary>
+        /// cell control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText cell;
+
+        /// <summary>
         /// details control.
         /// </summary>
         /// <remarks>

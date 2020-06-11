@@ -11,17 +11,17 @@ namespace Passware.PasswordReset
 {
 
 
-    public partial class Default
+    public partial class NewPassword
     {
 
         /// <summary>
-        /// email control.
+        /// outerDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl email;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl outerDiv;
 
         /// <summary>
         /// password control.
@@ -31,5 +31,14 @@ namespace Passware.PasswordReset
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputPassword password;
+
+        /// <summary>
+        /// confirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword confirm;
     }
 }

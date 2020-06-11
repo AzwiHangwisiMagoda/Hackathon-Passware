@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Passware.PasswordReset._Default" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Passware.PasswordReset.Default" %>
 
 <asp:Content ID="Head" ContentPlaceHolderID="Head" runat="server">
     <link href="Content/default.css" rel="stylesheet" />
@@ -28,18 +28,18 @@
             <%--form--%>
             <div id="form">
                 <div class="divEmail">
-                    <input type="email" id="email" placeholder="username@company.com" required autofocus>
+                    <input type="email" id="email" placeholder="username@company.com" required autofocus runat="server">
                 </div>
 
                 <div class="divPass">
-                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="password" id="password" placeholder="Password" required runat="server">
                 </div>
 
                 <a href="ForgotPass.aspx">Forgot Password?</a>
             </div>
 
             <%--button--%>
-            <asp:Button Text="Log On" runat="server" />
+            <asp:Button Text="Log On" runat="server" name="LogOn" OnClick="LogOn_Click"/>
             
         </div>
         

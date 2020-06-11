@@ -13,11 +13,11 @@
             <hr />
             <div id="form">
                 <div class="divEmail">
-                    <input type="email" id="email" placeholder="username@company.com" required autofocus>
+                    <input type="email" id="email" placeholder="username@company.com" required autofocus runat="server">
                 </div>
 
                 <div class="divEmail">
-                    <input type="text" id="cell" placeholder="081 123 4567" required autofocus>
+                    <input type="text" id="cell" placeholder="081 123 4567" required autofocus runat="server">
                 </div>
             </div>
 
