@@ -8,7 +8,7 @@ namespace User.Services
 {
     public interface IUserService
     {
-        Users Authenticate(string username, string password);
-        Users Create(Users user, string password);
+        void Update(UserEntity user, string password);
+        UserEntity GetUserByUsername(string username);
     }
 }

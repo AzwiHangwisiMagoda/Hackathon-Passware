@@ -6,18 +6,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using User.Entities;
 
-namespace User.Models
+namespace User.Helpers
 {
-    public class UserContext : DbContext
+    public class DataContext : DbContext
     {
-        //public UserContext(DbContextOptions<UserContext> options)
-        //    : base(options) { }
-
-        //public DbSet<Users> Users { get; set; }
-
         protected readonly IConfiguration Configuration;
 
-        public UserContext(IConfiguration configuration)
+        public DataContext(IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -25,9 +20,9 @@ namespace User.Models
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
             // connect to sql server database
-            options.UseSqlServer(Configuration.GetConnectionString(""));
+            options.UseSqlServer(Configuration.GetConnectionString("sqlConnection"));
         }
 
-        public DbSet<Users> Users { get; set; }
+        public DbSet<UserEntity> Users { get; set; }
     }
 }
