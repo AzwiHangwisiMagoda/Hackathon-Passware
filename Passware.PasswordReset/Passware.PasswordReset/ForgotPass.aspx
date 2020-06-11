@@ -8,16 +8,12 @@
     <div id="outerDiv" runat="server">
         <div id="content">
 
-            <p>Please input the email and cellphone number you registered with in order to receive your otp</p>
+            <p>Please input the email you registered with in order to receive your otp</p>
 
             <hr />
             <div id="form">
                 <div class="divEmail">
                     <input type="email" id="email" placeholder="username@company.com" required autofocus runat="server">
-                </div>
-
-                <div class="divEmail">
-                    <input type="text" id="cell" placeholder="081 123 4567" required autofocus runat="server">
                 </div>
             </div>
 
