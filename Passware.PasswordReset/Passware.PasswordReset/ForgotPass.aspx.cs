@@ -7,11 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace Passware.PasswordReset
 {
-    public partial class About : Page
+    public partial class ForgotPass : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+            outerDiv.Visible = false;
+            details.Visible = true;
         }
     }
 }
